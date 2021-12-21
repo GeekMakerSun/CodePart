@@ -179,6 +179,110 @@
         .button:not(.disabled):hover #line {
             transform: translate(35px, 42px) scaleX(0.33);
         }
+
+        .swiper-pagination-bullet {
+            position: relative;
+            width: 9px;
+            height: 9px;
+            margin: 0 6px !important;
+            vertical-align: middle;
+            opacity: 1;
+            outline: none;
+            background: none;
+        }
+
+        .swiper-pagination-bullet span {
+            display: block;
+            width: 3px;
+            height: 3px;
+            margin-top: 3px;
+            margin-left: 3px;
+            border-radius: 50%;
+            background: #cccccc;
+        }
+
+        .swiper-pagination-bullet i {
+            position: absolute;
+            z-index: 3;
+            top: 4px;
+            width: 20px;
+            height: 1px;
+            transition-timing-function: linear;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: #000000;
+        }
+
+        .swiper-pagination-bullet-active span, .swiper-pagination-bullet:hover span {
+            position: relative;
+            z-index: 1;
+            width: 9px;
+            height: 9px;
+            margin-top: 0;
+            margin-left: 0;
+            background: #000000;
+        }
+
+        .swiper-pagination-bullet-active i {
+            animation: middle 6s;
+        }
+
+        .swiper-pagination-bullet:first-child.swiper-pagination-bullet-active i {
+            animation: first 6s;
+        }
+
+        .swiper-pagination-bullet:last-child.swiper-pagination-bullet-active i {
+            animation: last 6s;
+        }
+
+        @keyframes first {
+            0% {
+                transform: scaleX(0.5);
+                left: 0px;
+            }
+            /*091*/
+            100% {
+                transform: scaleX(1);
+                left: 2px;
+            }
+            /*0915*/
+        }
+
+        @keyframes last {
+            0% {
+                transform: scaleX(0.7);
+                left: -10px;
+            }
+            /*1090*/
+            20% {
+                transform: scaleX(0.3);
+                left: 2px;
+            }
+            /*090*/
+            100% {
+                transform: scaleX(0.3);
+                left: 0px;
+            }
+            /*090*/
+        }
+
+        @keyframes middle {
+            0% {
+                transform: scaleX(0.7);
+                left: -10px;
+            }
+            /*1091*/
+            20% {
+                transform: scaleX(0.45);
+                left: 2px;
+            }
+            /*092*/
+            100% {
+                transform: scaleX(1);
+                left: 2px;
+            }
+            /*0913*/
+        }
     </style>
 </head>
 <body>
@@ -241,12 +345,20 @@
     lock = false;
     bgColor = ["rgb(179, 189, 196)", "rgb(180, 183, 166)", "rgb(140, 152, 187)"]; //背景色
     const mySwiper = new Swiper('.swiper-container', {
-        speed: 1300,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        speed: 500,
         allowTouchMove: false,//禁止触摸滑动
         parallax: true,  //文字位移视差
         loop : true,
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<div class="' + className + '"><span></span><i></i></div>';
+            },
         },// 分页器
         on: {
             transitionStart: function () {
@@ -301,6 +413,9 @@
             mySwiper.slidePrev();
         }
     })
+    window.onresize = function () {
+        swiper.update();
+    }
 </script>
 </body>
 </html>
