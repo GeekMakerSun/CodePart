@@ -1,0 +1,15 @@
+.index_swiper {
+  position: relative;
+  height: 100vh;
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-next {
+    top: 95%;
+    left: 50%;
+    animation: fadeInUp ease 1s both infinite;
+    background-image: url("../img/icon_up.png");
+    background-size: 80%;
+  }
+}

@@ -7,25 +7,37 @@ const myAC_child3 = new animateControl("child3_ani_");
 $(document).ready(function () {
     // 第 1 个子swiper幻灯片
     const mySwiper_child1 = new Swiper('.swiper-container-child1', {
-        direction: 'horizontal', grabCursor: true, loop: true, onInit: function (swiper) {
+        direction: 'horizontal',
+        grabCursor: true,
+        loop: true,
+        onInit: function (swiper) {
             myAC_child1.init(swiperAnimateParam_child1, swiper);
-        }, onSlideChangeEnd: function (swiper) {
+        },
+        onSlideChangeEnd: function (swiper) {
             myAC_child1.play();
         },
     });
     // 第 2 个子swiper幻灯片
     const mySwiper_child2 = new Swiper('.swiper-container-child2', {
-        direction: 'horizontal', grabCursor: true, loop: true, onInit: function (swiper) {
+        direction: 'horizontal',
+        grabCursor: true,
+        loop: true,
+        onInit: function (swiper) {
             myAC_child2.init(swiperAnimateParam_child2, swiper);
-        }, onSlideChangeEnd: function (swiper) {
+        },
+        onSlideChangeEnd: function (swiper) {
             myAC_child2.play();
         },
     });
     // 第 3 个子swiper幻灯片
     const mySwiper_child3 = new Swiper('.swiper-container-child3', {
-        direction: 'horizontal', grabCursor: true, loop: true, onInit: function (swiper) {
+        direction: 'horizontal',
+        grabCursor: true,
+        loop: true,
+        onInit: function (swiper) {
             myAC_child3.init(swiperAnimateParam_child3, swiper);
-        }, onSlideChangeEnd: function (swiper) {
+        },
+        onSlideChangeEnd: function (swiper) {
             myAC_child3.play();
         },
     });
