@@ -9,9 +9,8 @@ $(function () {
     loading_container += '</div>';
     $("body").prepend(loading_container);
     setTimeout(function () {
-            $("#loading_slow").fadeIn(500)
-        },
-        5000);
+        $("#loading_slow").fadeIn(500)
+    }, 5000);
     $("#loading_refresh").click(function () {
         location.reload();
         return !1;

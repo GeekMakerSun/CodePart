@@ -24,9 +24,9 @@
         }
 
         .swiper-container {
+            overflow: hidden;
             width: 100%;
             height: 100%;
-            overflow: hidden;
             transition: 1s background-color 1.3s;
             background-color: rgb(179, 189, 196);
         }
@@ -339,7 +339,7 @@
     <!--右箭头-->
 </div>
 <!--<script src="js/swiper.min.js"></script>-->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!--suppress JSUnusedLocalSymbols -->
 <script>
     lock = false;
@@ -352,7 +352,7 @@
         speed: 500,
         allowTouchMove: false,//禁止触摸滑动
         parallax: true,  //文字位移视差
-        loop : true,
+        loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
