@@ -1,0 +1,253 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+/**************************************** 主幻灯片 1 ****************************************/
+/* 幻灯片 1 */
+.main1_ani_01 {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    width: 248px;
+    height: auto;
+    margin-left: -124px;
+}
+
+.main1_ani_02 {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    width: 185px;
+    height: auto;
+    margin-left: -92px;
+}
+
+/* 幻灯片 2 */
+/* 幻灯片 3 */
+/* 幻灯片 4 */
+/* 幻灯片 5 */
+.main1_ani_03 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 280px;
+    height: auto;
+    margin-left: -140px;
+}
+
+.main1_ani_04 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 260px;
+    height: auto;
+    margin-left: -130px;
+}
+
+/*************************************** 子幻灯片 1 ***************************************/
+/* 幻灯片 1 */
+.child1_ani_01 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 158px;
+    height: auto;
+    margin-left: -79px;
+}
+
+.child1_ani_02 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 240px;
+    height: auto;
+    margin-left: -120px;
+}
+
+.child1_ani_03 {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    width: 241px;
+    height: auto;
+    margin-left: -120px;
+}
+
+.child1_ani_04 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 142px;
+    height: auto;
+    margin-left: -71px;
+}
+
+.child1_ani_05 {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    width: 248px;
+    height: auto;
+    margin-left: -110px;
+}
+
+/* 幻灯片 2 */
+.child1_ani_06 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 293px;
+    height: auto;
+    margin-left: -146px;
+}
+
+.child1_ani_07 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 260px;
+    height: auto;
+    margin-left: -130px;
+}
+
+/*************************************** 子幻灯片 2 ***************************************/
+/* 幻灯片 1 */
+.child2_ani_01 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 166px;
+    height: auto;
+    margin-left: -86px;
+}
+
+.child2_ani_02 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 250px;
+    height: auto;
+    margin-left: -125px;
+}
+
+.child2_ani_03 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 172px;
+    height: auto;
+    margin-left: -55px;
+}
+
+.child2_ani_04 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 142px;
+    height: auto;
+    margin-left: -71px;
+}
+
+.child2_ani_05 {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    width: 248px;
+    height: auto;
+    margin-left: -124px;
+}
+
+/* 幻灯片 2 */
+.child2_ani_06 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 293px;
+    height: auto;
+    margin-left: -146px;
+}
+
+.child2_ani_07 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 260px;
+    height: auto;
+    margin-left: -130px;
+}
+
+/*************************************** 子幻灯片 3 ***************************************/
+/* 幻灯片 1 */
+.child3_ani_01 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 162px;
+    height: auto;
+    margin-left: -84px;
+}
+
+.child3_ani_02 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 230px;
+    height: auto;
+    margin-left: -115px;
+}
+
+.child3_ani_03 {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    width: 161px;
+    height: auto;
+    margin-left: -80px;
+}
+
+.child3_ani_04 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 142px;
+    height: auto;
+    margin-left: -71px;
+}
+
+.child3_ani_05 {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    width: 271px;
+    height: auto;
+    margin-left: -135px;
+}
+
+.child3_ani_06 {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    width: 169px;
+    height: auto;
+    margin-left: -70px;
+}
+
+/* 幻灯片 2 */
+.child3_ani_07 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 293px;
+    height: auto;
+    margin-left: -146px;
+}
+
+.child3_ani_08 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 260px;
+    height: auto;
+    margin-left: -130px;
+}
